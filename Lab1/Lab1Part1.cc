@@ -11,15 +11,12 @@ Describe what is done in this file.
 using namespace std;
 
 int intFiveN(int N){
-
     int result = 5;
     int count = N-1;
-
     if(N = 0)
     {
         result = 0;
     }
-
     else
     {
         while(count != 0)
