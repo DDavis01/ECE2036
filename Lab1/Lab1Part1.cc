@@ -1,49 +1,62 @@
 /*
-Author: <Your name>
+Author: Donald Andrew Davis
 Date last modified: <date last modified>
 Organization: ECE2036 Class
-Description:
-Describe what is done in this file.
+Description: Describe what is done in this file.
 */
 
-#include <iostream>
-#include <cmath>
+#include <iostream> 
 using namespace std;
 
-int intFiveN(int N){
+
+int powerFiveInt(int exponent){
+    
     int result = 5;
-    int count = N-1;
-    if(N = 0)
-    {
-        result = 0;
-    }
-    else
-    {
-        while(count != 0)
+    for(int N = 1; N <=exponent; ++N){
+        if(N==1)
         {
-            result = result * 5;
-            count = count - 1;
+        result = 5;
+        }
+        else{
+        result = result * 5;
+        }
+        cout << "Integer: 5^" << N << " is: "<< result << endl;
+        if(result<0){
+            break;
         }
     }
-    return(result);
+    return 0;
 }
 
+
+
+long long powerFiveLong(int exponent){
+    
+    long long result = 5;
+    for(int N = 1; N <=exponent; ++N){
+        if(N==1)
+        {
+        result = 5;
+        }
+        else{
+        result = result * 5;
+        }
+        cout << "Long Long: 5^" << N << " is: "<< result << endl;
+        if(result<0){
+            break;
+        }
+    }
+    return 0;
+}
 
 
 
 int main()
 {   
-    int result;
-    int exponent;
-    int diff;
-    cout << "Please enter exponent value : ";
-    cin >> exponent;
-    cout << "The exponent is : " << exponent << endl;
-    result = intFiveN(exponent);
-
-    cout << "The Result is : " << result << endl;
-    diff = 2147483647 - result;
-    cout << "The Difference between Max is : " << diff << endl;
     
+    int result;
+    int exponent = 128;
+    powerFiveInt(exponent);
+    powerFiveLong(exponent);
     return 0;
 }
