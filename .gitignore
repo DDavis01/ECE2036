@@ -43,5 +43,5 @@ $RECYCLE.BIN/
 *.pif
 *.vb
 *.wsf
-
 # End of https://www.gitignore.io/api/executable
+*.json
