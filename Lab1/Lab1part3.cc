@@ -10,7 +10,6 @@ Description: Describe what is done in this file.
 using namespace std;
 
 
-
 double sq_rt_2 = 1.414213562373095048801688724209698078569671875376948073176679;
 
 float factorial(float n) 
@@ -107,11 +106,4 @@ int main(){
 		cout << "approx = " << dSeries << endl;
 		cout << "% error = " << 100*(sq_rt_2-dSeries)/sq_rt_2 << endl;
 	}
-
-
-
-
-
-
-
 }
