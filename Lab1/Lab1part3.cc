@@ -1,8 +1,8 @@
 /*
 Author: Donald Andrew Davis
-Date last modified: <date last modified>
+Date last modified: 1/27/2019
 Organization: ECE2036 Class
-Description: Describe what is done in this file.
+Description: ECE 2036 Lab 1 Part 3: Truncation Errors
 */
 
 #include <iostream>
@@ -12,7 +12,9 @@ using namespace std;
 
 double sq_rt_2 = 1.414213562373095048801688724209698078569671875376948073176679;
 
-float factorial(float n) 
+// Calculate Factorials with floats or doubles
+
+float factorial(float n) 							
 {
     if (n == 0){
 		return 1;
@@ -27,6 +29,9 @@ double dfactorial(double n)
 	}
     return n * factorial(n - 1);
 }
+
+
+// Power Series representation with double and float
 
 float floatPowerSeries(float k){
 	float i = 0;
@@ -61,7 +66,6 @@ double doublePowerSeries(double k){
 
 			num = dfactorial(((2*k)+1));
 			den = pow(2, ((3*k)+1))*pow(dfactorial(k),2);
-			
 
 		}
 		Series = num/den;

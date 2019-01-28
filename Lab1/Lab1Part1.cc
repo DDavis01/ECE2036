@@ -1,15 +1,15 @@
 /*
 Author: Donald Andrew Davis
-Date last modified: <date last modified>
+Date last modified: 1/26/2019
 Organization: ECE2036 Class
-Description: Describe what is done in this file.
+Description: ECE 2036 Lab 1 Part 1. Calculating out of range errors
 */
 
 #include <iostream> 
 using namespace std;
 
 
-int powerFiveInt(int exponent){
+int powerFiveInt(int exponent){                                    // Integer implementation of powers of 5
     
     int result = 5;
     for(int N = 1; N <=exponent; ++N){
@@ -30,7 +30,7 @@ int powerFiveInt(int exponent){
 
 
 
-long long powerFiveLong(int exponent){
+long long powerFiveLong(int exponent){                            // Long Long implentation of powers of 5 
     
     long long result = 5;
     for(int N = 1; N <=exponent; ++N){

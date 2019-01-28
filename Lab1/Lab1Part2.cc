@@ -1,8 +1,8 @@
 /*
 Author: Donald Andrew Davis
-Date last modified: <date last modified>
+Date last modified: 1/27/2019
 Organization: ECE2036 Class
-Description: Describe what is done in this file.
+Description: ECE 2036 Lab 1 Part 2: Round Off Error
 */
 
 #include <iostream>
@@ -10,7 +10,7 @@ Description: Describe what is done in this file.
 using namespace std;
 
 
-double doubleQuadraticFunction(int sign, double a,double b,double c){
+double doubleQuadraticFunction(int sign, double a,double b,double c){                           // Double implementation of the quadratic function
         double root;
         double num;
         double den1;
@@ -29,7 +29,7 @@ double doubleQuadraticFunction(int sign, double a,double b,double c){
         return ans;
 }
 
-float floatQuadraticFunction(int sign, float a, float b, float c){
+float floatQuadraticFunction(int sign, float a, float b, float c){                              // Float implementation of the quadratic function
         float root;
         float num;
         float den1;
