@@ -68,13 +68,14 @@ int main(){
     dError2 = 100*(-3000-ansPlusDouble)/-3000;
     fError1 = 100*((-0.001)-ansMinFloat)/-0.001;
     fError2 = 100*(-3000-ansPlusFloat)/-3000;
-
+    cout.precision(10);
     cout << "Float Results:" << endl;
-    cout << "X1 = " << ansPlusFloat << "        " << "% Error = " <<fError1 << endl;
+    cout << "X1 = "  << ansPlusFloat << "        " << "% Error = " <<fError1 << endl;
     cout << "X2 = " << ansMinFloat <<  "        " << "% Error = " <<fError2 << endl;
+    cout.precision(17); 
     cout << "Double Results:"<<endl;
     cout << "X1 = " << ansPlusDouble << "        " << "% Error = " <<dError1 << endl;
-    cout << "X2 = " << ansMinDouble <<  "        " << "% Error = " <<dError2 << endl;
+    cout << "X2 = " <<  ansMinDouble <<  "        " << "% Error = " <<dError2 << endl;
 
 
     return 0;
